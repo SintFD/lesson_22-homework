@@ -4,14 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tailwind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
-        --color-clifford: #da373d;
+        --color-clifford: #4caf4f;
+        --color-primary: #ffffff;
+        --color-secondary: #f5f7fa;
+        --font-display: "Inter";
       }
     </style>
   </head>
-  <body>
-    <h1 class="text-clifford">asdwewadad</h1>
+  <body class="font-display">
+    <div class="bg-secondary">
+      <header
+        class="w-[1152px] mx-auto my-0 flex justify-between py-5 items-center"
+      >
+        <div class="flex gap-2 font-black text-2xl">
+          <img src="./images/logo.svg" alt="" />Nexcent
+        </div>
+        <nav>
+          <ul class="flex gap-12">
+            <li>Home</li>
+            <li>Service</li>
+            <li>Feature</li>
+            <li>Product</li>
+            <li>Testimonial</li>
+            <li>FAQ</li>
+          </ul>
+        </nav>
+        <div class="flex gap-8 items-center">
+          <a class="text-clifford" href="">Login</a
+          ><button
+            class="py-[10px] px-[20px] rounded-md bg-clifford text-primary"
+          >
+            Sign up
+          </button>
+        </div>
+      </header>
+      <section
+        class="w-[1152px] mx-auto my-0 pt-24 pb-4 grid grid-cols-[auto_1fr] gap-x-26 gap-y-17 items-center justify-items-center"
+      >
+        <div>
+          <h1 class="font-semibold text-7xl mb-4">
+            Lessons and insights
+            <span class="block text-clifford">from 8 years</span>
+          </h1>
+          <p class="mb-8">
+            Where to grow your business as a photographer: site or social media?
+          </p>
+          <button
+            class="py-[10px] px-[20px] rounded-md bg-clifford text-primary"
+          >
+            Register
+          </button>
+        </div>
+        <img class="block w-full" src="./images/illustration.svg" alt="" />
+        <img class="col-span-full" src="./images/dots.svg" alt="" />
+      </section>
+    </div>
+    <main></main>
   </body>
 </html>
